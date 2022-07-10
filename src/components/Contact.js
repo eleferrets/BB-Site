@@ -64,6 +64,8 @@ export default function Contact() {
               </div>
             </div> */}
         <form
+          data-netlify="true"
+          method="POST"
           netlify
           name="contact"
           onSubmit={handleSubmit}
@@ -73,8 +75,8 @@ export default function Contact() {
             Contact Me!
           </h2>
           <p className="leading-relaxed mb-5">
-            If you want to ask me any questions about me or any of my projects, then you are welcome to fill out this form! You can
-            also email me at{" "}
+            If you want to ask me any questions about me or any of my projects,
+            then you are welcome to fill out this form! You can also email me at{" "}
             <a class="link" href="mailto:info@bjbme.com">
               info@bjbme.com
             </a>
@@ -88,6 +90,7 @@ export default function Contact() {
               type="text"
               id="name"
               name="name"
+              placeholder="Your name"
               className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               onChange={(e) => setName(e.target.value)}
             />
@@ -100,6 +103,7 @@ export default function Contact() {
               type="email"
               id="email"
               name="email"
+              placeholder="Email"
               className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               onChange={(e) => setEmail(e.target.value)}
             />
@@ -114,6 +118,7 @@ export default function Contact() {
             <textarea
               id="message"
               name="message"
+              placeholder="Your message"
               className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
               onChange={(e) => setMessage(e.target.value)}
             />
