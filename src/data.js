@@ -9,9 +9,9 @@ export const projects = [
   },
   {
     title: "Freedom",
-    subtitle: "Minimalist Platformer",
+    subtitle: "GameMaker",
     description:
-      "Freedom is a 2D minimalist platformer made in GameMaker that tells a story of a struggle, and you can pet things!",
+      "Freedom is a 2D minimalist platformer that tells a story of a struggle, and you can pet things!",
     image: "./freedom.png",
     link: "https://freedom.bjbme.com",
   },

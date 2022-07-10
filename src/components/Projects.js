@@ -14,10 +14,6 @@ export default function Projects() {
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
             Have a look at some of the projects I am most proud of!
           </p>
-          <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-            The others are older portfolio sites with more details about me and
-            my projects!
-          </p>
         </div>
         <div className="flex flex-wrap -m-4">
           {projects.map((project) => (
