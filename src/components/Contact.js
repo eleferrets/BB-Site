@@ -73,8 +73,7 @@ export default function Contact() {
             Contact Me
           </h2>
           <p className="leading-relaxed mb-5">
-            If you want to ask me any questions about any projects (especially
-            the platformer), then you are welcome to fill out this form! You can
+            If you want to ask me any questions about me or any of my projects, then you are welcome to fill out this form! You can
             also email me at{" "}
             <a class="link" href="mailto:info@bjbme.com">
               info@bjbme.com
