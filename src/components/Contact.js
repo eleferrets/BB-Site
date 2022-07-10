@@ -70,7 +70,7 @@ export default function Contact() {
           className="lg:w-1/3 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0"
         >
           <h2 className="text-white sm:text-4xl text-3xl mb-1 font-medium title-font">
-            Contact Me
+            Contact Me!
           </h2>
           <p className="leading-relaxed mb-5">
             If you want to ask me any questions about me or any of my projects, then you are welcome to fill out this form! You can
