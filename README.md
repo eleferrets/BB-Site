@@ -1,7 +1,5 @@
 # My New Website!
 
-----
-
 ## Technologies used in the website
 
 - **React** 
