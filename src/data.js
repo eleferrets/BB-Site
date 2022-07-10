@@ -1,60 +1,64 @@
 export const projects = [
   {
-    title: "React Reserve",
-    subtitle: "MERN Stack",
+    title: "Arthub",
+    subtitle: "PERN Stack",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./project-1.gif",
-    link: "https://reactbootcamp.com",
+      "Designed as a way to help beginning artists find a space to share their art and build a sense of community with others.",
+    image: "./arthub-pic.png",
+    link: "https://arthub-site.surge.sh/",
   },
   {
-    title: "React Tracks",
-    subtitle: "React and Python",
+    title: "Freedom",
+    subtitle: "Minimalist Platformer",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./project-2.gif",
-    link: "https://reactbootcamp.com",
+      "Freedom is a 2D minimalist platformer made in GameMaker that tells a story of a struggle, and you can pet things!",
+    image: "./freedom.png",
+    link: "https://freedom.bjbme.com",
   },
   {
-    title: "DevChat",
-    subtitle: "React and Firebase",
+    title: "Older Portfolio",
+    subtitle: "React",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./project-3.gif",
-    link: "https://reactbootcamp.com",
+      "My older portfolio site, converted to a React app!",
+    image: "./old-portfolio.png",
+    link: "https://eleferrets.github.io/IS117_Portfolio_React/",
   },
   {
-    title: "Epic Todo App",
-    subtitle: "React Hooks",
+    title: "Newer Portfolio",
+    subtitle: "HTML, CSS, JS",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./project-4.gif",
-    link: "https://reactbootcamp.com",
+      "This is the newer portfolio I made to showcase my skills!",
+    image: "./bb-portfolio.png",
+    link: "https://my-bb-portfolio.netlify.app/index.html",
   },
 ];
 
-export const testimonials = [
-  {
-    quote:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quod necessitatibus quidem impedit facilis? Distinctio laboriosam veritatis recusandae minus. Voluptatum accusantium hic laudantium soluta ea sapiente cupiditate officia maiores itaque.",
-    image: "https://randomuser.me/api/portraits/men/1.jpg",
-    name: "Jesse Hicks",
-    company: "Zoozle",
-  },
-  {
-    quote:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quod necessitatibus quidem impedit facilis? Distinctio laboriosam veritatis recusandae minus. Voluptatum accusantium hic laudantium soluta ea sapiente cupiditate officia maiores itaque.",
-    image: "https://randomuser.me/api/portraits/men/94.jpg",
-    name: "Ruben Alvarez",
-    company: "Dooble.io",
-  },
-];
+// export const testimonials = [
+//   {
+//     quote:
+//       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quod necessitatibus quidem impedit facilis? Distinctio laboriosam veritatis recusandae minus. Voluptatum accusantium hic laudantium soluta ea sapiente cupiditate officia maiores itaque.",
+//     image: "https://randomuser.me/api/portraits/men/1.jpg",
+//     name: "Jesse Hicks",
+//     company: "Zoozle",
+//   },
+//   {
+//     quote:
+//       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quod necessitatibus quidem impedit facilis? Distinctio laboriosam veritatis recusandae minus. Voluptatum accusantium hic laudantium soluta ea sapiente cupiditate officia maiores itaque.",
+//     image: "https://randomuser.me/api/portraits/men/94.jpg",
+//     name: "Ruben Alvarez",
+//     company: "Dooble.io",
+//   },
+// ];
 
 export const skills = [
+  "HTML",
+  "CSS",
   "JavaScript",
   "React",
-  "Next.js",
-  "Node",
-  "GraphQL",
-  "Material UI",
+  "C",
+  "C++",
+  "Java",
+  "Express",
+  "PostgreSQL",
+  "GIT",
 ];
