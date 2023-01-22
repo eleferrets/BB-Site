@@ -3,7 +3,7 @@ export const projects = [
     title: "Arthub",
     subtitle: "PERN Stack",
     description:
-      "Designed as a way to help beginning artists find a space to share their art and build a sense of community with others.",
+      "Designed as a way to help beginning artists find a space to share their art and build a sense of community with others!",
     image: "./arthub-pic.png",
     link: "https://arthub-site.surge.sh/",
   },
@@ -31,6 +31,14 @@ export const projects = [
     image: "./bb-portfolio.png",
     link: "https://my-bb-portfolio.netlify.app/index.html",
   },
+  {
+    title: "Mxer",
+    subtitle: "Android Studio, Kotlin, Java",
+    description:
+      "Mxer is an app that has users talk among different communities/interests!",
+    image: "./mxer.png",
+    link: "https://github.com/Corporate-Jargon/Mxer",
+  },  
 ];
 
 // export const testimonials = [
