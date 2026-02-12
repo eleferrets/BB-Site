@@ -1,19 +1,19 @@
 export const projects = [
   {
-    title: "Arthub",
-    subtitle: "PERN Stack",
-    description:
-      "Designed as a way to help beginning artists find a space to share their art and build a sense of community with others!",
-    image: "./arthub-pic.png",
-    link: "https://arthub-site.surge.sh/",
-  },
-  {
     title: "Freedom",
     subtitle: "GameMaker",
     description:
       "Freedom is a 2D minimalist platformer that tells a story of a struggle, and you can pet things!",
     image: "./freedom.png",
     link: "https://freedom.bjbme.com",
+  },
+  {
+    title: "My Redbubble Store",
+    subtitle: "3-Peeps",
+    description:
+      "Features collections of my art that I have for sale on Redbubble!",
+    image: "./redbubble.jpeg",
+    link: "http://3-peeps.redbubble.com",
   },
   {
     title: "Older Portfolio",
@@ -39,6 +39,14 @@ export const projects = [
     image: "./mxer.png",
     link: "https://github.com/Corporate-Jargon/Mxer",
   },  
+  {
+    title: "Arthub",
+    subtitle: "PERN Stack",
+    description:
+      "Designed as a way to help beginning artists find a space to share their art and build a sense of community with others!",
+    image: "./arthub-pic.png",
+    link: "https://arthub-site.surge.sh/",
+  },
 ];
 
 // export const testimonials = [
@@ -62,7 +70,7 @@ export const skills = [
   "HTML",
   "CSS",
   "JavaScript",
-  "React",
+  "React.js",
   "C",
   "C++",
   "Java",
