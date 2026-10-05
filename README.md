@@ -16,7 +16,6 @@ npm run build    # production build (Netlify runs: CI= npm run build)
 - `src/components/` — Navbar, About (hero), Projects, Skills, Contact, Footer.
 - `src/index.css` — all styling (plain CSS, dark amber theme, Manrope).
 - `public/img/` — optimized project screenshots and portrait (16:10 for projects).
-- `mockups/` — the design directions that led to this site, kept for reference.
 
 ## Contact form (Netlify)
 
