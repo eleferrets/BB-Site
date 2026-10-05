@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brian Balthazar — Full-stack Web Developer</title>
+<meta name="description" content="Brian Balthazar is a full-stack web developer. Projects, skills and contact.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0f0e0d; --surface:#171514; --line:#2a2623; --text:#ece7df; --muted:#9d958a; --accent:#e3a857; --accent-ink:#1a1305;
+    --serif:"Instrument Serif",Georgia,serif; --sans:Inter,system-ui,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0}
+  html{scroll-behavior:smooth;scroll-padding-top:84px}
+  body{background:var(--bg);color:var(--text);font:400 17px/1.65 var(--sans);-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  img{display:block;max-width:100%}
+  .wrap{max-width:1160px;margin:0 auto;padding:0 28px}
+  :focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+
+  /* header */
+  header{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+  .brand{font-family:var(--serif);font-size:24px;letter-spacing:.01em}
+  .nav ul{display:flex;gap:30px;list-style:none;padding:0;font-size:15px;color:var(--muted)}
+  .nav ul a:hover{color:var(--text)}
+  .nav .cta{color:var(--text);border:1px solid var(--line);padding:8px 16px;border-radius:999px;font-size:14px;transition:.2s}
+  .nav .cta:hover{border-color:var(--accent);color:var(--accent)}
+
+  /* hero */
+  .hero{padding:96px 0 104px}
+  .hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:72px;align-items:center}
+  .eyebrow{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:22px}
+  h1{font:400 clamp(52px,7.4vw,96px)/.98 var(--serif);letter-spacing:-.015em;margin-bottom:30px}
+  h1 em{color:var(--accent);font-style:italic}
+  .hero p{color:#cfc8bd;max-width:560px;font-size:18.5px}
+  .hero p strong{color:var(--text);font-weight:500}
+  .btns{display:flex;gap:12px;margin-top:38px;flex-wrap:wrap}
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:13px 24px;border-radius:999px;font-weight:500;font-size:15.5px;transition:.2s}
+  .btn.primary{background:var(--accent);color:var(--accent-ink)}
+  .btn.primary:hover{background:#efba72}
+  .btn.ghost{border:1px solid var(--line);color:var(--text)}
+  .btn.ghost:hover{border-color:var(--muted)}
+  .portrait{position:relative}
+  .portrait img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:50% 20%;border-radius:6px;filter:saturate(.9) contrast(1.02)}
+  .portrait::after{content:"";position:absolute;inset:14px -14px -14px 14px;border:1px solid var(--accent);opacity:.45;border-radius:6px;z-index:-1}
+
+  /* sections */
+  section{padding:96px 0;border-top:1px solid var(--line)}
+  .sec-head{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:52px;flex-wrap:wrap}
+  h2{font:400 clamp(38px,5vw,58px)/1.05 var(--serif);letter-spacing:-.01em}
+  .sec-head p{color:var(--muted);max-width:420px}
+
+  /* projects */
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:36px 28px}
+  .card{display:flex;flex-direction:column}
+  .thumb{aspect-ratio:16/10;overflow:hidden;border-radius:6px;border:1px solid var(--line);background:var(--surface)}
+  .thumb img{width:100%;height:100%;object-fit:cover;transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+  .card:hover .thumb img{transform:scale(1.04)}
+  .meta{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin:20px 0 8px}
+  .card h3{font:400 30px/1.1 var(--serif)}
+  .arrow{color:var(--muted);transition:.2s;font-size:20px}
+  .card:hover .arrow{color:var(--accent);transform:translate(3px,-3px)}
+  .stack{font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:10px}
+  .card p{color:var(--muted);font-size:15.5px;line-height:1.6}
+
+  /* skills */
+  .skills{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+  .skills h3{font:400 26px var(--serif);margin-bottom:18px;color:var(--muted)}
+  .skills ul{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:10px}
+  .skills li{border:1px solid var(--line);background:var(--surface);padding:8px 18px;border-radius:999px;font-size:15.5px}
+
+  /* contact */
+  .contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:72px}
+  .contact-grid p{color:#cfc8bd;margin:22px 0 28px}
+  .contact-grid p a{color:var(--accent);border-bottom:1px solid currentColor}
+  .links{display:flex;gap:22px;color:var(--muted);font-size:15px}
+  .links a:hover{color:var(--text)}
+  form{display:grid;gap:18px}
+  label{display:grid;gap:7px;font-size:14px;color:var(--muted)}
+  input,textarea{font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:13px 15px;transition:.2s}
+  input:focus,textarea:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px rgba(227,168,87,.15)}
+  textarea{min-height:150px;resize:vertical}
+  .hp{position:absolute;left:-9999px}
+  button{font:500 15.5px var(--sans);cursor:pointer;border:0;justify-self:start}
+  .status{font-size:14.5px;min-height:1.4em;color:var(--muted)}
+  .status.ok{color:#8bd5a0}.status.err{color:#f0907a}
+  footer{border-top:1px solid var(--line);padding:32px 0;color:var(--muted);font-size:14px}
+  footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+
+  @media(max-width:900px){
+    .hero{padding:56px 0 72px}.hero-grid{grid-template-columns:1fr;gap:56px}.portrait{max-width:380px}
+    .grid{grid-template-columns:repeat(2,1fr)}
+    .skills,.contact-grid{grid-template-columns:1fr;gap:44px}
+    .nav ul{display:none}
+  }
+  @media(max-width:600px){.grid{grid-template-columns:1fr}.wrap{padding:0 20px}section{padding:72px 0}}
+  @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a href="#top" class="brand">Brian Balthazar</a>
+    <ul>
+      <li><a href="#projects">My Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="../public/resume.pdf">My Resume</a></li>
+    </ul>
+    <a href="#contact" class="cta">Contact Me</a>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap hero">
+    <div class="hero-grid">
+      <div>
+        <div class="eyebrow">Full-stack Web Developer</div>
+        <h1>Hi! I'm <em>Brian!</em></h1>
+        <p>I am <strong>Brian Balthazar</strong> and I am a <strong>Full-stack Web Developer</strong>. I have done <strong>remote</strong> work for influential companies such as CodePath and iCIMS, and have collaborated with many amazing and talented people to create apps for consumers. I also make games on the side, and know a bit of Spanish and Haitian Creole.</p>
+        <div class="btns">
+          <a class="btn primary" href="#projects">My Projects</a>
+          <a class="btn ghost" href="../public/resume.pdf">My Resume</a>
+        </div>
+      </div>
+      <div class="portrait"><img src="img/brian.jpg" alt="Brian Balthazar" width="960" height="1200"></div>
+    </div>
+  </div>
+
+  <section id="projects">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>My Projects</h2>
+        <p>Have a look at some of the projects I am most proud of!</p>
+      </div>
+      <div class="grid">
+        <a class="card" href="https://freedom.bjbme.com">
+          <div class="thumb"><img src="img/freedom.jpg" alt="Freedom game screenshot" loading="lazy"></div>
+          <div class="meta"><h3>Freedom</h3><span class="arrow">↗</span></div>
+          <div class="stack">GameMaker</div>
+          <p>Freedom is a 2D minimalist platformer that tells a story of a struggle, and you can pet things!</p>
+        </a>
+        <a class="card" href="https://arthub-site.surge.sh/">
+          <div class="thumb"><img src="img/arthub.jpg" alt="Arthub home page" loading="lazy"></div>
+          <div class="meta"><h3>Arthub</h3><span class="arrow">↗</span></div>
+          <div class="stack">PERN Stack</div>
+          <p>Designed as a way to help beginning artists find a space to share their art and build a sense of community with others!</p>
+        </a>
+        <a class="card" href="https://github.com/Corporate-Jargon/Mxer">
+          <div class="thumb"><img src="img/mxer.jpg" alt="Mxer communities screen" loading="lazy"></div>
+          <div class="meta"><h3>Mxer</h3><span class="arrow">↗</span></div>
+          <div class="stack">Android Studio, Kotlin, Java</div>
+          <p>Mxer is an app that has users talk among different communities/interests!</p>
+        </a>
+        <a class="card" href="http://3-peeps.redbubble.com">
+          <div class="thumb"><img src="img/redbubble.jpg" alt="3-Peeps Redbubble store" loading="lazy"></div>
+          <div class="meta"><h3>My Redbubble Store</h3><span class="arrow">↗</span></div>
+          <div class="stack">3-Peeps</div>
+          <p>Features collections of my art that I have for sale on Redbubble!</p>
+        </a>
+        <a class="card" href="https://my-bb-portfolio.netlify.app/index.html">
+          <div class="thumb"><img src="img/new-portfolio.jpg" alt="Newer portfolio" loading="lazy"></div>
+          <div class="meta"><h3>Newer Portfolio</h3><span class="arrow">↗</span></div>
+          <div class="stack">HTML, CSS, JS</div>
+          <p>This is the newer portfolio I made to showcase my skills!</p>
+        </a>
+        <a class="card" href="https://eleferrets.github.io/IS117_Portfolio_React/">
+          <div class="thumb"><img src="img/old-portfolio.jpg" alt="Older portfolio" loading="lazy"></div>
+          <div class="meta"><h3>Older Portfolio</h3><span class="arrow">↗</span></div>
+          <div class="stack">React</div>
+          <p>My older portfolio site, converted to a React app!</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="wrap">
+      <div class="sec-head"><h2>My Skills</h2></div>
+      <div class="skills">
+        <div><h3>Languages</h3><ul><li>HTML</li><li>CSS</li><li>JavaScript</li><li>C</li><li>C++</li><li>Java</li></ul></div>
+        <div><h3>Frameworks &amp; tools</h3><ul><li>React.js</li><li>Express</li><li>PostgreSQL</li><li>GIT</li></ul></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap contact-grid">
+      <div>
+        <h2>Contact Me</h2>
+        <p>If you want to ask me any questions about me or any of my projects, then you are welcome to fill out this form! You can also email me at <a href="mailto:info@bjbme.com">info@bjbme.com</a>!</p>
+        <div class="links"><a href="https://github.com/eleferrets">GitHub</a><a href="../public/resume.pdf">Resume</a></div>
+      </div>
+
+      <!-- Netlify form: same name / honeypot / fields as the live site -->
+      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="contact-form">
+        <input type="hidden" name="form-name" value="contact">
+        <p class="hp"><label>Don't fill this out: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+        <label>Name<input type="text" name="name" placeholder="Your name" required autocomplete="name"></label>
+        <label>Email<input type="email" name="email" placeholder="Your email" required autocomplete="email"></label>
+        <label>Message<textarea name="message" placeholder="Your message" required></textarea></label>
+        <button type="submit" class="btn primary">Submit</button>
+        <div class="status" role="status" aria-live="polite"></div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap"><span>© <span id="yr"></span> Brian Balthazar</span><a href="mailto:info@bjbme.com">info@bjbme.com</a></div></footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  const form = document.getElementById('contact-form'), status = form.querySelector('.status');
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    const body = new URLSearchParams(new FormData(form)).toString();
+    status.className = 'status'; status.textContent = 'Sending…';
+    fetch('/', {method:'POST', headers:{'Content-Type':'application/x-www-form-urlencoded'}, body})
+      .then(r => { if(!r.ok) throw new Error(); form.reset(); status.className='status ok'; status.textContent='Message sent!'; })
+      .catch(() => { status.className='status err'; status.textContent='Something went wrong. You can email me at info@bjbme.com instead.'; });
+  });
+</script>
+</body>
+</html>
