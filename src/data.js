@@ -1,80 +1,76 @@
+const img = (name) => `${process.env.PUBLIC_URL}/img/${name}`;
+
 export const projects = [
   {
     title: "Freedom",
-    subtitle: "GameMaker",
+    stack: "GameMaker",
     description:
       "Freedom is a 2D minimalist platformer that tells a story of a struggle, and you can pet things!",
-    image: "./freedom.png",
+    image: img("freedom.jpg"),
+    alt: "Freedom game screenshot",
     link: "https://freedom.bjbme.com",
   },
   {
-    title: "My Redbubble Store",
-    subtitle: "3-Peeps",
+    title: "Arthub",
+    stack: "PERN Stack",
     description:
-      "Features collections of my art that I have for sale on Redbubble!",
-    image: "./redbubble.jpeg",
-    link: "http://3-peeps.redbubble.com",
-  },
-  {
-    title: "Older Portfolio",
-    subtitle: "React",
-    description:
-      "My older portfolio site, converted to a React app!",
-    image: "./old-portfolio.png",
-    link: "https://eleferrets.github.io/IS117_Portfolio_React/",
-  },
-  {
-    title: "Newer Portfolio",
-    subtitle: "HTML, CSS, JS",
-    description:
-      "This is the newer portfolio I made to showcase my skills!",
-    image: "./bb-portfolio.png",
-    link: "https://my-bb-portfolio.netlify.app/index.html",
+      "Designed as a way to help beginning artists find a space to share their art and build a sense of community with others!",
+    image: img("arthub.jpg"),
+    alt: "Arthub home page",
+    link: "https://arthub-site.surge.sh/",
   },
   {
     title: "Mxer",
-    subtitle: "Android Studio, Kotlin, Java",
+    stack: "Android Studio, Kotlin, Java",
     description:
       "Mxer is an app that has users talk among different communities/interests!",
-    image: "./mxer.png",
+    image: img("mxer.jpg"),
+    alt: "Mxer communities screen",
     link: "https://github.com/Corporate-Jargon/Mxer",
-  },  
+  },
   {
-    title: "Arthub",
-    subtitle: "PERN Stack",
+    title: "My Redbubble Store",
+    stack: "3-Peeps",
     description:
-      "Designed as a way to help beginning artists find a space to share their art and build a sense of community with others!",
-    image: "./arthub-pic.png",
-    link: "https://arthub-site.surge.sh/",
+      "Features collections of my art that I have for sale on Redbubble!",
+    image: img("redbubble.jpg"),
+    alt: "3-Peeps Redbubble store",
+    link: "http://3-peeps.redbubble.com",
+  },
+  {
+    title: "Newer Portfolio",
+    stack: "HTML, CSS, JS",
+    description: "This is the newer portfolio I made to showcase my skills!",
+    image: img("new-portfolio.jpg"),
+    alt: "Newer portfolio",
+    link: "https://my-bb-portfolio.netlify.app/index.html",
+  },
+  {
+    title: "Older Portfolio",
+    stack: "React",
+    description: "My older portfolio site, converted to a React app!",
+    image: img("old-portfolio.jpg"),
+    alt: "Older portfolio",
+    link: "https://eleferrets.github.io/IS117_Portfolio_React/",
   },
 ];
 
-// export const testimonials = [
-//   {
-//     quote:
-//       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quod necessitatibus quidem impedit facilis? Distinctio laboriosam veritatis recusandae minus. Voluptatum accusantium hic laudantium soluta ea sapiente cupiditate officia maiores itaque.",
-//     image: "https://randomuser.me/api/portraits/men/1.jpg",
-//     name: "Jesse Hicks",
-//     company: "Zoozle",
-//   },
-//   {
-//     quote:
-//       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quod necessitatibus quidem impedit facilis? Distinctio laboriosam veritatis recusandae minus. Voluptatum accusantium hic laudantium soluta ea sapiente cupiditate officia maiores itaque.",
-//     image: "https://randomuser.me/api/portraits/men/94.jpg",
-//     name: "Ruben Alvarez",
-//     company: "Dooble.io",
-//   },
-// ];
-
 export const skills = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "React.js",
-  "C",
-  "C++",
-  "Java",
-  "Express",
-  "PostgreSQL",
-  "GIT",
+  {
+    heading: "Languages",
+    items: ["HTML", "CSS", "JavaScript", "C", "C++", "Java"],
+  },
+  {
+    heading: "Frameworks & tools",
+    items: ["React.js", "Express", "PostgreSQL", "GIT"],
+  },
 ];
+
+export const profile = {
+  name: "Brian Balthazar",
+  role: "Full-stack Web Developer",
+  email: "info@bjbme.com",
+  github: "https://github.com/eleferrets",
+  photo: img("brian.jpg"),
+  resume: `${process.env.PUBLIC_URL}/resume.pdf`,
+};

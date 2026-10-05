@@ -2,11 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.jpg" />
+    <link rel="icon" type="image/png" href="%PUBLIC_URL%/favicon.png" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" sizes="any" />
+    <meta name="theme-color" content="#0f0e0d" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="My main website for all stuff about me! Also check out my free platformer game, Freedom!"
+      content="Brian Balthazar is a full-stack web developer. Projects, skills and contact. Also check out my free platformer game, Freedom!"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
@@ -23,7 +25,10 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>My Site</title>
+    <title>Brian Balthazar — Full-stack Web Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-RYG7CYFX3W"></script>
@@ -37,7 +42,9 @@
   </head>
   <body>
 
-  <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+  <!-- Netlify reads this static form at build time so the React form can POST to "/" -->
+  <form name="contact" data-netlify="true" netlify-honeypot="bot-field" hidden>
+    <input type="text" name="bot-field" />
     <input type="text" name="name" />
     <input type="email" name="email" />
     <textarea name="message"></textarea>
