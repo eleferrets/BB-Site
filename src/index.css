@@ -57,11 +57,6 @@
   .stack{font-size:13px;font-weight:600;color:var(--accent);margin-bottom:10px}
   .card p{color:var(--muted);font-size:15.5px;line-height:1.65}
 
-  /* skills */
-  .skills{display:grid;grid-template-columns:1fr 1fr;gap:56px}
-  .skills h3{font:700 14px var(--sans);letter-spacing:.1em;text-transform:uppercase;margin-bottom:20px;color:var(--muted)}
-  .skills ul{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:10px}
-  .skills li{border:1px solid var(--line);background:var(--surface);padding:8px 18px;border-radius:999px;font-size:15.5px}
 
   /* contact */
   .contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:72px}
@@ -84,7 +79,7 @@
   @media(max-width:900px){
     .hero{padding-block:48px 72px}.hero-grid{grid-template-columns:1fr;gap:56px}.portrait{max-width:380px}
     .grid{grid-template-columns:repeat(2,1fr)}
-    .skills,.contact-grid{grid-template-columns:1fr;gap:44px}
+    .contact-grid{grid-template-columns:1fr;gap:44px}
     .nav ul{display:none}
   }
   @media(max-width:600px){.grid{grid-template-columns:1fr}.wrap{padding-inline:20px}section{padding:72px 0}}

@@ -12,8 +12,8 @@ npm run build    # production build (Netlify runs: CI= npm run build)
 
 ## Where things live
 
-- `src/data.js` — profile details, the six projects, and skills. Edit content here.
-- `src/components/` — Navbar, About (hero), Projects, Skills, Contact, Footer.
+- `src/data.js` — profile details, and the six projects. Edit content here.
+- `src/components/` — Navbar, About (hero), Projects, Contact, Footer.
 - `src/index.css` — all styling (plain CSS, dark amber theme, Manrope).
 - `public/img/` — optimized project screenshots and portrait (16:10 for projects).
 

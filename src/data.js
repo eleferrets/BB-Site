@@ -55,17 +55,6 @@ export const projects = [
   },
 ];
 
-export const skills = [
-  {
-    heading: "Languages",
-    items: ["HTML", "CSS", "JavaScript", "C", "C++", "Java"],
-  },
-  {
-    heading: "Frameworks & tools",
-    items: ["React.js", "Express", "PostgreSQL", "GIT"],
-  },
-];
-
 export const profile = {
   name: "Brian Balthazar",
   role: "Full-stack Web Developer",

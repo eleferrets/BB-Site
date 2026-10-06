@@ -13,9 +13,6 @@ export default function Navbar() {
             <a href="#projects">My Projects</a>
           </li>
           <li>
-            <a href="#skills">Skills</a>
-          </li>
-          <li>
             <a href={profile.resume}>My Resume</a>
           </li>
         </ul>
